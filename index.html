@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<div id="random-button-container"></div>
+
+<html>
+<div class="bg"> </div>
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M56XE85VB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-M56XE85VB5');
+  </script>
+  <title>Factory Deux | For Sale!</title>
+  <link rel="icon" type="image/png" href="schoology.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="marquee"><span id="alert"></span></div>
+  <footer>
+    <!--<a href="patch-notes.html" target="_blank">patch notes</a> -->
+  </footer>
+
+
+  <center>
+    <h1 id="title_e">factory deux</h1>
+    <a href="https://www.youtube.com/channel/UCxpl3TFRHIQskffRXmFUEww" target="_blank"
+      style="color:floralwhite;">(click) My Youtube Channel</a>
+    <button class="pixel-button" style="display: none;" id="brokenButton">FIX ROCK.exe</button>
+
+  </center>
+
+  <span class="float-l">
+    <h1>general bank</h1>
+    <h3 id="tix">TIX: 0</h3>
+    <h3 id="t_text" class="t_text"></h3>
+    <h5 id="grams">grams: 0</h5>
+    <h5 id="spade">spade: ???</h5>
+    <h5 id="drillText"></h5>
+    <h5 id="refinery">refinery: ???</h5>
+    <h4>unearthery shop:</h4>
+    <button class="pixel-button" id="sellOres" onclick="sellOres()">sell 0 grams for 0 tix</button><br><br>
+    <button id="upgradeRefiner" class="pixel-button" onclick="upgradeRefiner()">upgrade</button><br><br>
+    <button class="pixel-button" id="spader" onclick="upgradeSpade()">unlock pewter spade: 50</button><br><br>
+    <button id="descend" class="pixel-button" onclick="upgradeLevel()">unlock next level: 500</button><br><br>
+
+    <!-- <button class="pixel-button" onclick="load()>load localstorage data</button>-->
+  </span>
+  <span class="float-r">
+    <h3 id="rebirthText">rebirths: 0</h3> <br>
+    <button class="pixel-button" onclick="rebirth()" id="rebirth">rebirth</button> <br><br>
+    <button class="pixel-button" onclick="buyDrill()" id="buyDrill"></button><br><br>
+    <button class="pixel-button" onclick="travel()" id="travel">travel to the exo-realm</button><br> <br>
+    <button class="pixel-button" onclick="travel()" id="upgradeRock">coming soon...</button><br>
+    <h3>workers</h3> <br>
+    <button class="pixel-button" onclick="hire_worker()" id="workerText">hire worker: 40 tix</button> <br> <br>
+    <button class="pixel-button" id="electrician">coming...</button><br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <input type="text" id="ttext"> <button id="submitData">
+  </span>
+  <div class="panelp">
+    <div class="panel-group">
+      <b id="topHeader1">CLICK THE ROCK</b>
+      <input onclick="up()" id="image_button1" type="image" src="rock.jpeg" width="210" height="200">
+      <b id="result">accretion: ???</b>
+      <b id="level">lvl: </b>
+      <b id="workers">workrs: 0</b>
+    </div>
+    <div class="panel-group">
+      <!-- Other elements go here -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
